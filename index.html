@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mouse Optico Inalambrico — Vista 3D</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
@@ -23,6 +24,16 @@
   .tt{font-size:13px;font-weight:700;color:#000;padding:5px;text-align:center}
   .hint{position:absolute;top:28px;left:28px;background:rgba(0,0,0,.7);color:#fff;padding:8px 14px;border-radius:6px;font-size:10px;z-index:15;pointer-events:none;line-height:1.6}
   #loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.8);color:#fff;padding:20px 40px;border-radius:10px;font-size:16px;z-index:100}
+  @media(max-width:500px){
+    .border,.border-in{display:none}
+    .lbl-t,.lbl-b,.lbl-l,.lbl-r{display:none}
+    .tb{width:calc(100% - 16px);left:8px;right:8px;bottom:8px;font-size:7px}
+    .tt{font-size:11px;padding:3px}
+    .tl{font-size:5.5px}
+    .tv{font-size:7px}
+    .tc{padding:2px 4px}
+    .hint{top:8px;left:8px;font-size:8px;padding:5px 10px}
+  }
 </style>
 </head>
 <body>
