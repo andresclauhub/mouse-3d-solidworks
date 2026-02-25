@@ -25,9 +25,10 @@
   .hint{position:absolute;top:28px;left:28px;background:rgba(0,0,0,.7);color:#fff;padding:8px 14px;border-radius:6px;font-size:10px;z-index:15;pointer-events:none;line-height:1.6}
   #loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.8);color:#fff;padding:20px 40px;border-radius:10px;font-size:16px;z-index:100}
   @media(max-width:500px){
+    #c{height:100svh}
     .border,.border-in{display:none}
     .lbl-t,.lbl-b,.lbl-l,.lbl-r{display:none}
-    .tb{width:calc(100% - 16px);left:8px;right:8px;bottom:8px;font-size:7px}
+    .tb{width:calc(100% - 16px);left:8px;right:auto;bottom:auto;top:auto;position:fixed;bottom:env(safe-area-inset-bottom,8px);margin-bottom:8px;font-size:7px;z-index:20}
     .tt{font-size:11px;padding:3px}
     .tl{font-size:5.5px}
     .tv{font-size:7px}
